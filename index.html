@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="qr-code-styling.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <form action="submit" id="qr-form">
+            <input type="text" id="text-input" placeholder="Enter text to encode">
+            <button id="generate-button">Generate</button>
+        </form>
+        <div>
+            <label for="label">QR Code Color:</label>
+            <input type="color" name="qr-color" id="qr-color">
+            
+        </div>
+        <div class="button-container">
+            <button id="download-button">Download QR code</button>
+        </div>
+        <div id="qr-code"></div>
+    </div>
+</body>
+</html>
